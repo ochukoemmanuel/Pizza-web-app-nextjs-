@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Featured from '../components/Featured';
+import PizzaList from '../components/PizzaList';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
@@ -11,9 +12,8 @@ export default function Home() {
         <meta name='description' content='Yummy Pizza resturant' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <body>
-        <Featured />
-      </body>
+      <Featured />
+      <PizzaList />
 
       {/* <Image src='favicon.ico' alt='' /> */}
     </div>
