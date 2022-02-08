@@ -7,7 +7,7 @@
   justify-content: space-between;
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 4;
 }
 
 .item {
@@ -58,10 +58,16 @@
 .listItem {
   margin: 20px;
   font-weight: 500;
+  cursor: pointer;
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 .cart {
   position: relative;
+  cursor: pointer;
 }
 
 .counter {
@@ -78,4 +84,18 @@
   justify-content: center;
   font-weight: bold;
   color: #d1411e;
+}
+
+@media screen and (max-width: 768px) {
+  .item:nth-child(2) {
+    display: none;
+  }
+
+  .item:nth-child(1) {
+    flex: 3;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
 }

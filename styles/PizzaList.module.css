@@ -19,3 +19,14 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+
+@media screen and (max-width: 768px) {
+  .title {
+    text-align: center;
+  }
+
+  .desc {
+    width: 90%;
+    text-align: center;
+  }
+}
